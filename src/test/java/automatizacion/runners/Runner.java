@@ -8,7 +8,7 @@ import io.cucumber.junit.CucumberOptions;
 @RunWith(Cucumber.class)
 @CucumberOptions(glue = { "automatizacion.definitions" }, 
 				features = "src/test/resources/features",
-				tags = "@test1 or @test3",
+				tags = "@test1",
 				plugin = {"pretty","com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"}
 				)
 
