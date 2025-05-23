@@ -34,23 +34,16 @@ public class MercadoLibrePage {
     protected static final int DEFAULT_WAIT_TIMEOUT = 30;
 
     private final String XPATH_BUSCAR = "//*[@resource-id='com.mercadolibre:id/ui_components_toolbar_search_field']";
-
     private final String TEXT_NOTIFICACION = "//*[@resource-id='com.mercadolibre:id/andes_button_text' and @text='Activar notificaciones']";
-
     private final String XPATH_TEXT = "//*[@text='%s']";
-
     private final String XPATH_CONTAINS_TEXT = "//android.widget.TextView[contains(@text,'%s')]";
     private final String INPUT_SEARCH = "//*[@resource-id='com.mercadolibre:id/search_input_edittext']";
-
     private final String SEARCH_ELEMENT = "//*[@resource-id='com.mercadolibre:id/search_cell_title_text_view' and @text='%s']";
     private final String SOME_TEXT_BUTTON = "//*[@resource-id='com.mercadolibre:id/andes_button_text' and @text='%s']";
-
     private final String TEXT_TITLE = "//*[@resource-id='com.mercadolibre:id/login_identification_title' and @text='%s']";
-
     private final String TEXT_ESTRELLAS = "(//*[@resource-id='com.mercadolibre:id/search_cell_review_stars_rating_bar'])[2]";
     private final String TEXT_CALIFICACION = "//*[@resource-id='reviews-capability.mobile']/android.view.View/android.view.View[1]";
     private final String TEXT_OPINION = "//*[@resource-id='reviews-capability.mobile']/android.view.View/android.view.View[2]";
-
     private final String TEXT_OPINION_USER = "//*[@resource-id='reviews-capability.mobile']/android.view.View/android.view.View[3]";
     private final String NRO_RATING = "//android.widget.TextView[@resource-id='com.mercadolibre:id/header_component_rating_qualification']";
 
@@ -252,7 +245,6 @@ public class MercadoLibrePage {
 
         }
     }
-
 
     public void scrollDown() {
         new TouchAction(driver)
