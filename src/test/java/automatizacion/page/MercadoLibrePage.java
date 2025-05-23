@@ -273,7 +273,7 @@ public class MercadoLibrePage {
 //                .perform();
 //    }
 
-    
+
     protected void scrollDownUntilElementVisible(By locator) throws Exception {
         MobileElement element = null;
         int attempts = 0;
