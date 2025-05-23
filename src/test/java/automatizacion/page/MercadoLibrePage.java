@@ -255,6 +255,15 @@ public class MercadoLibrePage {
                 .perform();
     }
 
+    public void scrollUp() {
+        new TouchAction(driver)
+                .press(PointOption.point(500, 500))
+                .waitAction(WaitOptions.waitOptions(Duration.ofMillis(500)))
+                .moveTo(PointOption.point(500, 1500))
+                .release()
+                .perform();
+    }
+
 //    public void scrollUp() {
 //        new TouchAction(driver)
 //                .press(PointOption.point(500, 500))
@@ -263,7 +272,6 @@ public class MercadoLibrePage {
 //                .release()
 //                .perform();
 //    }
-
 
     protected void scrollDownUntilElementVisible(By locator) throws Exception {
         MobileElement element = null;
